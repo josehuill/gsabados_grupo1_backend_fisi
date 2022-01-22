@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.AlumnoB.CalificationAlumnoA_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Evento Finalizado"
+            android:layout_margin="5dp"
+            android:textSize="18sp"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_fileName="check.json"
+            android:layout_gravity="center"
+            app:lottie_loop="true"
+            android:scaleType="centerCrop"
+            app:lottie_autoPlay="true"
+
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_fileName="position2.json"
+            android:layout_gravity="center"
+            app:lottie_loop="true"
+            android:scaleType="centerCrop"
+            app:lottie_autoPlay="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Deja tu calificacion"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnCalificationAlumnoA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/black"
+            android:text="Calificar Correor"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+

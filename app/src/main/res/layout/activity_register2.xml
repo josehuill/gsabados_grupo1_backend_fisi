@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Register2Activity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+
+        >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:lottie_imageAssetsFolder="assets"
+            app:lottie_fileName="main.json"
+            android:layout_gravity="center"
+            app:lottie_loop="true"
+            android:scaleType="centerCrop"
+            app:lottie_autoPlay="true"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" Correo@unmsm.edu.pe"
+                    android:inputType="textEmailAddress">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputCodigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" Codigo de alumno"
+                    android:inputType="textEmailAddress">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            >
+
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" Nombre Completo"
+                    android:inputType="textEmailAddress">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="15dp"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputAddres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" Distrito de residencia"
+                    android:inputType="textEmailAddress">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="top">
+
+            <Button
+                android:id="@+id/btnRegister2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="REGISTRARSE"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
