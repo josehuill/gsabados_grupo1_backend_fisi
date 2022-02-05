@@ -4,67 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".activities.Login2Activity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:gravity="center">
 
+        <ImageView
+            android:id="@+id/logo_sm"
+            android:layout_width="306dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/fondologin"
+
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
 
     <LinearLayout
-
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="35dp"
         android:orientation="vertical"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        >
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            app:lottie_imageAssetsFolder="assets"
-            app:lottie_fileName="main.json"
-            android:layout_gravity="center"
-            app:lottie_loop="true"
-            android:scaleType="centerCrop"
-            app:lottie_autoPlay="true"
-            tools:ignore="MissingConstraints" />
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            app:lottie_imageAssetsFolder="assets"
-            app:lottie_fileName="runAnimation.json"
-            android:layout_gravity="center"
-            app:lottie_loop="true"
-            android:scaleType="centerCrop"
-            app:lottie_autoPlay="true"
-            tools:ignore="MissingConstraints" />
 
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="30dp"
-            >
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/email"/>
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bordertextview"
+            android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputLayout
-
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textInputEmail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint=" Correo@unmsm.edu.pe"
-                    android:inputType="textEmailAddress">
+                    android:background="@null"
+                    android:hint="Email address@unmsm.edu.pe"
+                    android:inputType="textEmailAddress"
+                    android:paddingVertical="10dp">
 
                 </com.google.android.material.textfield.TextInputEditText>
 
@@ -73,17 +62,10 @@
         </LinearLayout>
 
         <LinearLayout
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/password"/>
+            android:background="@drawable/bordertextview"
+            android:orientation="horizontal">
 
             <com.google.android.material.textfield.TextInputLayout
 
@@ -91,12 +73,15 @@
                 android:layout_height="wrap_content"
 
                 >
+
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/textInputPassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Contraseña"
-                    android:inputType="textPassword">
+                    android:background="@null"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingVertical="10dp">
 
                 </com.google.android.material.textfield.TextInputEditText>
 
@@ -105,23 +90,20 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="bottom">
+            android:layout_height="103dp"
+            android:gravity="bottom"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="INGRESAR"
+                android:layout_margin="20dp"
                 android:background="@drawable/rounded_button"
                 android:backgroundTint="@color/black"
-                android:textColor="@color/white"
-                android:layout_margin="20dp"/>
+                android:text="INGRESAR"
+                android:textColor="@color/white" />
         </LinearLayout>
 
-
-
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

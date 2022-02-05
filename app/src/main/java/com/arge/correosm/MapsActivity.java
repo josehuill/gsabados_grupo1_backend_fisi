@@ -35,6 +35,7 @@ import com.arge.correosm.R;
 import com.arge.correosm.Utilidades;
 import com.arge.correosm.activities.AlmunoA.RecuesAlumnoBActivity;
 import com.arge.correosm.activities.AlumnoB.RegisterBActivity;
+import com.arge.correosm.activities.StartAloneActivity;
 import com.arge.correosm.providers.AuthProvider;
 import com.arge.correosm.providers.GeofireProvider;
 import com.arge.correosm.providers.GoogleApiProvider;
@@ -125,6 +126,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private TextView mTextViewStartAddreess;
 
     private Button mbtnReguesNow;
+    private Button mbtnStartAlone;
 
     private String start_address;
     private String end_address;
@@ -150,12 +152,20 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mTextViewendAddress = findViewById(R.id.textViewDestin);
         mTextViewStartAddreess = findViewById(R.id.textViewOrigin);
 
+        mbtnStartAlone = findViewById(R.id.btnStartAlone);
         mbtnReguesNow = findViewById(R.id.btnReguesNow);
 
         mbtnReguesNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 goToRequesAlumnoB();
+            }
+        });
+
+        mbtnStartAlone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                gotoStartAlone();
             }
         });
 
@@ -192,6 +202,23 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private void goToRequesAlumnoB(){
         Intent intent = new Intent(MapsActivity.this, RecuesAlumnoBActivity.class);
+        intent.putExtra("origin_lat" , mOriginLatLng.latitude);
+        intent.putExtra("origin_lng" , mOriginLatLng.longitude);
+
+        intent.putExtra("origin" , mOriginLatLng);
+        intent.putExtra("destination" , mDestinatioLatLong);
+        intent.putExtra("destination_lat" , mDestinatioLatLong.latitude);
+        intent.putExtra("destination_lng" , mDestinatioLatLong.longitude);
+
+        intent.putExtra("start_address" , start_address);
+        intent.putExtra("end_address" , end_address);
+
+        startActivity(intent);
+        finish();
+    }
+
+    private void gotoStartAlone(){
+        Intent intent = new Intent(MapsActivity.this, StartAloneActivity.class);
         intent.putExtra("origin_lat" , mOriginLatLng.latitude);
         intent.putExtra("origin_lng" , mOriginLatLng.longitude);
 

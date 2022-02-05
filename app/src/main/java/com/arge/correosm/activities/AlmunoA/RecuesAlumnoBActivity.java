@@ -81,6 +81,9 @@ public class RecuesAlumnoBActivity extends AppCompatActivity {
 
     private ValueEventListener mListener;
 
+    private String start_address;
+    private String end_address;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -238,6 +241,9 @@ public class RecuesAlumnoBActivity extends AppCompatActivity {
                         String distance = ""+((JSONObject)((JSONObject)jLegs.get(j)).get("distance")).get("text");
                         String duration = ""+((JSONObject)((JSONObject)jLegs.get(j)).get("duration")).get("text");
 
+                        start_address = ""+((JSONObject) jLegs.get(j)).get("start_address");
+                        end_address = ""+((JSONObject) jLegs.get(j)).get("end_address");
+
                         sendNotification(duration, distance);
 
                         Log.i("distance",""+distance);
@@ -327,11 +333,25 @@ public class RecuesAlumnoBActivity extends AppCompatActivity {
                     String status = snapshot.getValue().toString();
                     if(status.equals("accept")){
                         Intent intent= new Intent(RecuesAlumnoBActivity.this, MapAlunoABookingActivity.class);
+                        /***/
+                        intent.putExtra("origin_lat" , mOriginLatLng.latitude);
+                        intent.putExtra("origin_lng" , mOriginLatLng.longitude);
+
+                        intent.putExtra("origin" , mOriginLatLng);
+                        intent.putExtra("destination" , mDestinationLatLng);
+                        intent.putExtra("destination_lat" , mDestinationLatLng.latitude);
+                        intent.putExtra("destination_lng" , mDestinationLatLng.longitude);
+
+                        intent.putExtra("start_address" , start_address);
+                        intent.putExtra("end_address" , end_address);
+
+                        /***/
                         startActivity(intent);
                         finish();
                     }else if(status.equals("cancel")){
                         Toast.makeText(RecuesAlumnoBActivity.this, "El corredor no acepto el evento", Toast.LENGTH_SHORT);
                         Intent intent= new Intent(RecuesAlumnoBActivity.this, map_alumnoA.class);
+
                         startActivity(intent);
                         finish();
                     }

@@ -17,6 +17,72 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                >
+                <Button
+                    android:id="@+id/btnReguesNow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="@color/black"
+                    android:text="SOLICITAR MATCH"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp">
+
+                <Button
+                    android:id="@+id/btnStartAlone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="0dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/border_color"
+                    android:text="INICIAR SOLO"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom"
         android:orientation="vertical">
@@ -86,7 +152,7 @@
             android:padding="15dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_button"
             android:backgroundTint="@color/white"
             >
@@ -142,7 +208,7 @@
 
 
         </LinearLayout>
-
+<!--
         <Button
             android:id="@+id/btnReguesNow"
             android:layout_width="match_parent"
@@ -154,7 +220,7 @@
             android:backgroundTint="@color/black"
             android:text="SOLICITAR MATCH"
             android:textColor="@color/white"/>
-
+-->
 
     </LinearLayout>
 

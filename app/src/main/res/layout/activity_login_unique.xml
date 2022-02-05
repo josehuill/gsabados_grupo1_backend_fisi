@@ -53,9 +53,8 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
-                android:background="@drawable/rounded_button"
+                android:background="@drawable/border_color"
                 android:text="SING UP"
-                android:backgroundTint="@color/white"
                 android:layout_marginRight="5dp"
                 android:layout_marginLeft="20dp"
                 />

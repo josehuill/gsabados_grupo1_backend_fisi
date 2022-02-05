@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/home_event">
+
+    <fragment
+        android:id="@+id/home_event"
+        android:name="com.arge.correosm.home_event"
+        android:label="fragment_home_event"
+        tools:layout="@layout/fragment_home_event" />
+    <fragment
+        android:id="@+id/crear_evento"
+        android:name="com.arge.correosm.crear_evento"
+        android:label="fragment_crear_evento"
+        tools:layout="@layout/fragment_crear_evento" />
+    <fragment
+        android:id="@+id/activity_PerfilUser"
+        android:name="com.arge.correosm.activity_PerfilUser"
+        android:label="fragment_activity__perfil_user"
+        tools:layout="@layout/fragment_activity__perfil_user" />
+
+    <fragment
+        android:id="@+id/activity_Otro"
+        android:name="com.arge.correosm.map_alumnoB"
+        android:label="fragment_activity__Otro"
+        tools:layout="@layout/activity_map_alumno_b" />
+
+</navigation>

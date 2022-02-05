@@ -119,14 +119,23 @@ public class MapAlunoABookingActivity extends AppCompatActivity implements OnMap
     private boolean isFirst = true;
 
 
+    /******/
+    private String mExtraOrigen;
+    private String mExtraDestination;
+    private double mExtraDestinationLat;
+    private double mExtraDestinationLng;
+    private double mExtraOriginLat;
+    private double mExtraOriginLng;
+    /******/
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map_aluno_abooking);
         fab = findViewById(R.id.fab);
 
-        mTextViewEmailAlumnoABooking = findViewById(R.id.textViewEmailAlumnoBBooking);
-        mTextViewAlumnoABooking = findViewById(R.id.textViewAlumnoBBooking);
+        //mTextViewEmailAlumnoABooking = findViewById(R.id.textViewEmailAlumnoBBooking);
+        //mTextViewAlumnoABooking = findViewById(R.id.textViewAlumnoBBooking);
         mtextViewStatusBooking = findViewById(R.id.textViewStatusBooking);
 
         mGeofireProvider = new GeofireProvider("alumnoB_working");
@@ -154,6 +163,20 @@ public class MapAlunoABookingActivity extends AppCompatActivity implements OnMap
         }
         getStatus();
         getAlumnoABooking();
+
+        /***/
+        mExtraOrigen = getIntent().getStringExtra("start_address");
+        mExtraDestination = getIntent().getStringExtra("end_address");
+
+        mExtraOriginLat= getIntent().getDoubleExtra("origin_lat",0);
+        mExtraOriginLng= getIntent().getDoubleExtra("origin_lng",0);
+
+        mExtraDestinationLat= getIntent().getDoubleExtra("destination_lat",0);
+        mExtraDestinationLng= getIntent().getDoubleExtra("destination_lng",0);
+
+        mOriginLatLng = new LatLng(mExtraOriginLat, mExtraOriginLng);
+        mDestinationLatLng = new LatLng(mExtraDestinationLat, mExtraDestinationLng);
+        /***/
 
     }
 
@@ -286,6 +309,16 @@ public class MapAlunoABookingActivity extends AppCompatActivity implements OnMap
 
     public void finishBooking(){
         Intent intent = new Intent(MapAlunoABookingActivity.this, CalificationAlumnoB_Activity.class);
+        intent.putExtra("origin_lat" , mOriginLatLng.latitude);
+        intent.putExtra("origin_lng" , mOriginLatLng.longitude);
+
+        intent.putExtra("origin" , mOriginLatLng);
+        intent.putExtra("destination" , mDestinationLatLng);
+        intent.putExtra("destination_lat" , mDestinationLatLng.latitude);
+        intent.putExtra("destination_lng" , mDestinationLatLng.longitude);
+
+        intent.putExtra("start_address" , mExtraOrigen);
+        intent.putExtra("end_address" , mExtraDestination);
         startActivity(intent);
         finish();
     }

@@ -124,6 +124,7 @@ public class map_alumnoA extends AppCompatActivity implements OnMapReadyCallback
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map_alumno_a);
 
+
         fab = findViewById(R.id.fab);
 
         mapView = findViewById(R.id.map_view);

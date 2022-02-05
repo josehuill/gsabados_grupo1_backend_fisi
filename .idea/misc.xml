@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/drawable-xxxhdpi/bordertextview.xml" value="0.225" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/layout/activity_barra.xml" value="0.15" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/layout/activity_login.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/layout/activity_login2.xml" value="0.24166666666666667" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/layout/activity_map_alumno_b.xml" value="0.18" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/layout/activity_navegacion.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/layout/activity_register.xml" value="0.19384057971014493" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/layout/activity_register2.xml" value="0.19384057971014493" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/layout/activity_reporting.xml" value="0.22" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/layout/fragment_activity__perfil_user.xml" value="0.20998864926220204" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/layout/fragment_crear_evento.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/layout/fragment_home_event.xml" value="0.25" />
+        <entry key="..\:/Users/BRYAN/Documents/TrabajoAndroid/ULTIMO-BACK/CorreoSM/app/src/main/res/menu/bottom_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/argen/AndroidStudioProjects/CorreoSM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/argen/AndroidStudioProjects/CorreoSM/app/src/main/res/drawable/rounded_button.xml" value="0.22135416666666666" />
         <entry key="..\:/Users/argen/AndroidStudioProjects/CorreoSM/app/src/main/res/layout/activity_calification_alumno_aactivity.xml" value="0.22" />
@@ -23,6 +37,32 @@
         <entry key="..\:/Users/argen/AndroidStudioProjects/CorreoSM/app/src/main/res/layout/activity_register2.xml" value="0.25" />
         <entry key="..\:/Users/argen/AndroidStudioProjects/CorreoSM/app/src/main/res/layout/activity_register_bactivity.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/argen/AndroidStudioProjects/CorreoSM/app/src/main/res/layout/activity_select_option_auth.xml" value="0.22" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/drawable/border_color.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/drawable/ic_home_purple.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/drawable/icon_home_purple.xml" value="0.20052083333333334" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/drawable/rounded_button.xml" value="0.18645833333333334" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_barra.xml" value="0.2" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_calification_alumno_aactivity.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_calification_alumno_bactivity.xml" value="0.18072916666666666" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_detail_reques.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_home.xml" value="0.29913473423980225" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_login.xml" value="0.209375" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_login2.xml" value="0.22" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_login_unique.xml" value="0.5" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_main.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_map_alumno_a.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_map_alumno_b.xml" value="0.24339035769828926" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_map_alumno_bbooking.xml" value="0.18" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_map_aluno_abooking.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_maps.xml" value="0.25" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_perfil.xml" value="0.25" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_recues_alumno_bactivity.xml" value="0.17889492753623187" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_reporting.xml" value="0.18" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_select_option_auth.xml" value="0.209375" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/activity_start_alone.xml" value="0.25" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/fragment_activity__perfil_user.xml" value="0.13541666666666666" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/layout/fragment_home_event.xml" value="0.25" />
+        <entry key="..\:/Users/argen/Downloads/New folder (25)/CorreoSM/app/src/main/res/menu/bottom_menu.xml" value="0.1" />
       </map>
     </option>
   </component>

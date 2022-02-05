@@ -31,6 +31,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.arge.correosm.R;
+import com.arge.correosm.activities.AlmunoA.RecuesAlumnoBActivity;
 import com.arge.correosm.map_alumnoB;
 import com.arge.correosm.providers.AlumnoABookingProvider;
 import com.arge.correosm.providers.AlumnoAprovider;
@@ -123,12 +124,14 @@ public class MapAlumnoBBookingActivity extends AppCompatActivity  implements OnM
 
         mTextViewEmailAlumnoABooking = findViewById(R.id.textViewEmailAlumnoABooking);
         mTextViewAlumnoABooking = findViewById(R.id.textViewAlumnoABooking);
+
         mbtnStartBooking = findViewById(R.id.btnStartBooking);
         mbtnFinishBooking = findViewById(R.id.btnFinishBooking);
 
         //mbtnStartBooking.setEnabled(false);
 
         mExtraAlumnoAid = getIntent().getStringExtra("idAlumnoA");
+        printID(mExtraAlumnoAid);
         mAlumnoAprovider = new AlumnoAprovider();
         mAlumnoABookingProvider = new AlumnoABookingProvider();
 
@@ -182,6 +185,10 @@ public class MapAlumnoBBookingActivity extends AppCompatActivity  implements OnM
         getAlumnoA();
         getAlumnoABooking();
 
+    }
+
+    public void printID(String id){
+        System.out.println("IDD: ");
     }
 
     public void startBooking(){
@@ -252,6 +259,7 @@ public class MapAlumnoBBookingActivity extends AppCompatActivity  implements OnM
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists()){
+
                     String destination = snapshot.child("destination").getValue().toString();
                     String origin = snapshot.child("origin").getValue().toString();
 
@@ -317,6 +325,7 @@ public class MapAlumnoBBookingActivity extends AppCompatActivity  implements OnM
     }
 
     private void getAlumnoA() {
+        //mExtraAlumnoAid
         mAlumnoAprovider.getAlumnoA(mExtraAlumnoAid).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

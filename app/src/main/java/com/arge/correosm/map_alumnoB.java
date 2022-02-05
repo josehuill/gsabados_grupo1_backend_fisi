@@ -82,7 +82,7 @@ public class map_alumnoB extends AppCompatActivity implements OnMapReadyCallback
     private ValueEventListener mListener;
 
     private Button mbtnCreateEvent;
-
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,6 +122,7 @@ public class map_alumnoB extends AppCompatActivity implements OnMapReadyCallback
                 startActivity(intent);
             }
         });
+
 
         if (isPermisionGranted) {
             if (isGPSenable()) {

@@ -14,6 +14,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CorreoSM">
         <activity
+            android:name=".activities.StartAloneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".perfil_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityReporting"
+            android:exported="false" />
+        <activity
+            android:name=".activity_barra"
+            android:exported="true" />
+        <activity
             android:name=".activities.Register2Activity"
             android:exported="true" />
         <activity
